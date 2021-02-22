@@ -205,7 +205,13 @@ plugins:
 
 Related to [issue #9](https://github.com/CoinK0in/mkdocs-encryptcontent-plugin/issues/9)
 
-You **have to** enable [feature tag encrypt page](https://github.com/CoinK0in/mkdocs-encryptcontent-plugin#tag-encrypted-page) for this feature to work properly.
+You **have to** enable [feature tag encrypt page](https://github.com/CoinK0in/mkdocs-encryptcontent-plugin#tag-encrypted-page) for this feature to work properly:
+
+```yaml
+plugins:
+    - encryptcontent:
+        tag_encrypted_page: True
+```
 
 Add `encrypted_something: {}` in the plugin configuration variable, to encrypt something else.
 
